@@ -80,11 +80,12 @@ main {
 
 .intro {
     background-color: #ffffff;
-    padding: 15vh 0;
+    /* padding: 15vh 0; */
+    padding: 15vh 0 30vh 0
 }
 
 .intro-content {
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -97,11 +98,11 @@ main {
     text-align: justify;
     color: #828282;
     line-height: 40px;
-    flex-grow: 2;
 }
 
 .services {
     background-color: #f1c11a;
+    /* height: 50vh; */
     clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
     margin-top: -15vh;
 }
@@ -125,7 +126,8 @@ main {
 
 .contact {
     background-color: #ffffff;
-    padding: 10vh 0;
+    /* padding: 10vh 0; */
+    padding: 15vh 0 30vh 0;
     text-align: center;
 }
 
@@ -134,7 +136,7 @@ input[type=email],
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cccccc;
+    border-color: 1px solid #cccccc;
 }
 
 .contact-section div {
@@ -155,15 +157,26 @@ textarea {
 footer {
     background-color: #f1c11a;
     clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-    margin-top: -10vh;
+    /* margin-top: -10vh; */
+    margin-top: -15vh;
     text-align: center;
     padding-top: 15vh;
     padding-bottom: 30px;
 }
 
 
+@media screen and (max-width: 1440px) {
+    .services {
+        margin-top: -20vh;
+    }
+}
 
-/*ipad pro*/
+@media screen and (max-width: 1024px) {
+    .services {
+        margin-top: -22vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header-content h2 {
         font-size: 20px;
@@ -171,7 +184,7 @@ footer {
 
     .intro-content {
         display: block;
-        height: 90vh;
+        /* height: 90vh; */
     }
 
     .intro-content div {
@@ -179,221 +192,72 @@ footer {
     }
 
     .services {
-        height: 100vh;
+        /* height: 100vh; */
         clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
     .service-content {
         display: block;
-        margin-top: -15vh;
+        /* margin-top: -15vh; */
         padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     .bucket {
         width: 100%;
-        margin: 80px 3%;
+        /* margin: 80px 3%; */
+        margin: 80px 0 80px 0
     }
 }
 
 
-
-
-
-/*small size laptop*/
-@media screen and (max-width: 1367px) {
-    .intro {
-        height: 75vh;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .services {
-        height: 70vh;
-    }
-
-    .container .service-content {
-        padding-top: 0;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-    .header-content h2 {
-        font-size: 20px;
-    }
-
-    .intro {
-        height: 40vh;
-    }
-
-    .services {
-        clip-path: polygon(0 0, 15% 0, 50% 6%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-        height: 40vh;
-    }
-
-    footer {
-        padding-top: 6vh;
-    }
-}
-
-/*ipad*/
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 426px) {
     .header-content {
-        padding-top: 30vh;
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content h1,
+    .intro-content h1,
+    .contact-section h1 {
+        font-size: 2em;
     }
 
     .header-content h2 {
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        padding: 50px 0;
     }
 
-    .header-content h2 span {
-        line-height: 1vh;
+    .header-content h2 span:nth-child(1) {
+        line-height: 0;
     }
 
-    .intro {
-        background-color: #ffffff;
-        padding: 15vh 3%;
-        height: 110vh;
-    }
-
-    .services {
-        margin-top: 7vh;
-        height: 130vh;
-        padding-left: 3%;
-        padding-right: 3%
-    }
-
-    footer {
-        margin-top: -10vh;
-        text-align: center;
-        padding-top: 5vh;
-        padding-bottom: 2vh;
-    }
-}
-
-
-
-
-
-
-
-
-/*@media screen and (max-width: 768px) {
-    .header-content h2 {
-        font-size: 20px;
-    }
-
-    .intro-content {
-        display: block;
-        height: 90vh;
-    }
-
-    .intro-content div {
-        width: 100%;
-    }
-
-    .services {
-        height: 100vh;
-        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-    }
-
-    .service-content {
-        display: block;
-        margin-top: -15vh;
-        padding-top: 1px;
-    }
-
-    .bucket {
-        width: 100%;
-        margin: 80px 3%;
-    }
-}
-*/
-
-
-
-
-
-
-/*small mobile view*/
-@media screen and (max-width: 500px) {
-    .header-content {
-        padding-top: 15vh;
-    }
-
-    .header-content h2 {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-    }
-
-    .header-content h2 span {
-        line-height: 10vh;
+    .header-content h2 span:nth-child(2) {
+        line-height: 50px;
     }
 
     .btn {
-        padding: 1vh 1%;
-        display: block;
-        margin-top: 6vh;
-        margin-right: 20%;
-        margin-left: 20%
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
-    .intro {
-        padding: 10vh 5%;
-        height: 135vh;
+    .btn-trans,
+    .btn-fill {
+        width: 30%;
+        line-height: 0;
     }
-
-    .services {
-        margin-top: 4vh;
-        height: 160vh;
-        padding-left: 5%;
-        padding-right: 5%
-    }
-
-    input[type='text'],
-    input[type=email],
-    textarea {
-        width: 75%;
-    }
-
-    .btn-submit {
-        margin-top: 1vh;
-        ;
-        margin-left: 32%
-    }
-
 }
 
-
-/*extra small size mobile*/
 @media screen and (max-width: 320px) {
-    .header-content {
-        padding-top: 10vh;
+    .header-content h1{
+        font-size: 25px;
     }
-
-    .header-content h1 {
-        font-size: 35px;
-
+    .header-content h2{
+        font-size: 17px;
     }
-
-    .header-content h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .intro {
-        padding: 10vh 3%;
-        height: 165vh;
-    }
-
-    .services {
-        margin-top: 0vh;
-        height: 190vh;
-        padding-left: 3%;
-        padding-right: 3%;
+    .btn-trans,
+    .btn-fill {
+        width: 35%;
     }
 }
